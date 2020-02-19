@@ -14,6 +14,8 @@ else
 
   def show
    if params[:artist_id]
+  @song = Song.find_by(id: params[:id])
+end
   end
 
   def new
